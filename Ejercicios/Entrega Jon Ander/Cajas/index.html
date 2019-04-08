@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>Sumatorio de cajas</title>
+		<meta name="author" content="Jon Ander Gutierrez">
+	</head>
+	
+	<body>
+	
+		<h1>Inserta el numero de cajas</h1>
+		
+		<input id="n" type="text"></input>
+				
+		
+		<button id="mCasilla">Enviar</button>
+		
+		<script>
+		
+		document.getElementById("mCasilla").onclick = casillas;
+		
+		function casillas() {
+		  	
+			j = parseInt(document.getElementById("n").value);
+			
+			for (i = 0; i < j; i++) { 
+			  document.write("<input class='nums' id='"+ i + "'type='text'></input>");
+			}
+			
+			document.write("<button id='sumar'>Sumar</button>");
+			
+			document.getElementById("sumar").onclick = sumar;
+		}
+		
+		function sumar() {
+		  	
+			var lista = document.getElementsByClassName("nums");
+			var res = 0;
+			var i;
+						
+			for (i = 0; i < parseInt(lista.length); i++) { 
+			  res = res + parseInt(lista[i].value);
+			  
+			}
+			
+			document.write("El resultado es: " + res);
+		}
+		</script>
+		
+	</body>
+
+</html>

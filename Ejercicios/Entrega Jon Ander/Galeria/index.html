@@ -1,0 +1,31 @@
+<html>
+<meta charset="UTF-8">
+	<head>
+		<title>GALERIA</title>
+		
+		<script type="text/javascript" src="jquery-3.3.1.js"></script>
+		
+		<script>
+		
+			//Ext.Ajax.cors = true;
+			var folder = "images/";
+
+			$.ajax({
+				url: folder,
+				async: false,
+				crossDomain: true,
+				success: function (data) {
+					$(data).find("a").attr("href", function (i, val) {
+						if( val.match(/\.(jpe?g|png|gif)$/) ) { 
+							$("body").append( "<img src='"+ folder + val +"'>" );
+						} 
+					});
+				}
+			});
+		</script>
+	</head>
+	
+	<body>
+		
+	</body>
+</html>
