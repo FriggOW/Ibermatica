@@ -1,5 +1,4 @@
 body{
-	
 	background-image: url("https://previews.123rf.com/images/dodes11/dodes111507/dodes11150700019/43201760-tri%C3%A1ngulo-de-fondo-p%C3%A1gina-web-vector-illustration-fondo-abstracto-dise%C3%B1o-de-semitono-del-fondo-templates-ge.jpg")
 }
 
@@ -7,8 +6,32 @@ h1 {
 	text-align: center;
 }
 
+.menu{
+	width:250px;
+}
+
+#cTr{
+	background-color: cyan;
+}
+
+#cTa{
+	background-color: green;
+}
+
+#cF{
+	background-color: red;
+}
+
+#cG{
+	background-color: pink;
+}
+
+#tabla{
+    font-family: arial;
+	font-size: 20px;
+}
+
 ul{
-	
 	list-style-type: square;
 }
 
@@ -26,7 +49,6 @@ td{
 }
 
 img {
-	
 	width:35%;
 	height:35%;
 }
